@@ -7,8 +7,7 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const imageUrl = `./heroes/${id}.jpg`;
-    console.log(imageUrl)
+  const imageUrl = `./assets/heroes/${id}.jpg`;
   return (
     <div className="col">
       <div className="card">
