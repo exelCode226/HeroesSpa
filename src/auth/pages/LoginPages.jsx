@@ -8,6 +8,7 @@ export const LoginPages = () => {
 
   const onLogin = () => {
     login("Exel Agualimpia","Exel1991@hotmail.com");
+    
     navigate("/", {
       replace: true,
     });
