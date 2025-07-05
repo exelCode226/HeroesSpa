@@ -8,10 +8,10 @@ const initialState = {
 };
 
 const init =()=> {
-    const user = localStorage.getItem('user')
+    const user =JSON.parse(localStorage.getItem('user')); 
     return {
         logged:!!user,
-        user
+        user:user
     }
 }
 
@@ -29,6 +29,8 @@ export const AuthProvider = ({ children }) => {
 
     dispatch(action);
 };
+
+
 
   return <AuthContext.Provider value={{ 
     ...authState,
